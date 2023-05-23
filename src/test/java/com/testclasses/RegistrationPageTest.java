@@ -74,7 +74,7 @@ public class RegistrationPageTest extends Base {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		logger.info("befor click on sign in tab!");
-		r1.selectcondition().click();
+		//r1.selectcondition().click();
 		logger.info("after click on sign in tab!");
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		r1.submit().click();

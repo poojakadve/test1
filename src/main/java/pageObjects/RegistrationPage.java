@@ -37,7 +37,7 @@ public class RegistrationPage{
 	@FindBy(xpath="//*[@id='password-confirmation']")
 	WebElement password_confirmation;
 	
-	@FindBy(xpath="//*[@type='checkbox'][@name='terms_condition']")
+	@FindBy(xpath="//*[@type='checkbox'][@name='terms_condition']")//*bdjsdjshk
 	WebElement terms_condition;
 	
 	
@@ -63,10 +63,12 @@ public class RegistrationPage{
 	public WebElement enterconpassword(){
 		return password_confirmation;
 	}
-	public WebElement selectcondition(){
+	/*public WebElement selectcondition(){
 		return terms_condition;
+	}*/
+	public void  selectcondition(){
+		 terms_condition.click();
 	}
-	
 	public WebElement submit(){
 		return register;
 	}
